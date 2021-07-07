@@ -215,3 +215,13 @@
 ## 9. 解决history模式路由请求404的问题
     devServer: historyApiFallback: true, // 任意的 404 响应都被替代为 index.html
     output: publicPath: '/', // 引入打包的文件时路径以/开头
+    
+    
+    
+    
+## 10. webpack5 可以使用资源模块类型，来替代一些 loader;
+    资源模块类型（asset module type）,通过添加4种新的模块类型，来替换loader
+    asset/resource 发送一个单独文件并导出URL,之前使用 file-loader实现；
+    asset/inline 导出一个资源的 data URL ，之前通过使用 url-loader实现；
+    asset/source 导出资源的源代码，之前通过使用 raw-loader 实现；
+    asser 在导出一个 data URL 和发送一个单独的文件之间自动选择，之前通过使用 url-loader, 并且配置资源体积限制实现
