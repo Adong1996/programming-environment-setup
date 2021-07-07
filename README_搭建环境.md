@@ -219,7 +219,7 @@
     
     
     
-## 10. webpack5 可以使用资源模块类型，来替代一些 loader;
+## 10. webpack5 可以使用资源模块类型，来替代一些 loader; ---资源模块
     资源模块类型（asset module type）,通过添加4种新的模块类型，来替换loader
     asset/resource 发送一个单独文件并导出URL,之前使用 file-loader实现；
     asset/inline 导出一个资源的 data URL ，之前通过使用 url-loader实现；
